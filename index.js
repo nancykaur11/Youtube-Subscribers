@@ -9,7 +9,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
-// const DATABASE_URL = "mongodb://127.0.0.1:27017/subscribers";
 const DATABASE_URL = "mongodb://nancy:nancykaur@ac-k7pgmuk-shard-00-00.zxseeik.mongodb.net:27017,ac-k7pgmuk-shard-00-01.zxseeik.mongodb.net:27017,ac-k7pgmuk-shard-00-02.zxseeik.mongodb.net:27017/?replicaSet=atlas-i1ambc-shard-0&ssl=true&authSource=admin";
 mongoose.connect(DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection
